@@ -5,7 +5,15 @@
 "               http://www.github.com/sroemer/srVimConfiguration
 "
 " ######################################################################################################################
-set nocompatible    " do not make vim compatible with vi
+set nocompatible            " do not make vim compatible with vi
+" use pathogen for installation of plugins and runtime files
+execute pathogen#infect()
+
+" enable syntax highlighting and filtype plugins / indention
+syntax on
+filetype plugin on
+filetype indent on
+
 set hidden          " handle buffers effecively
 set ruler           " show lines and columns in status line
 set showcmd         " show (partial) comman in last line
@@ -63,11 +71,6 @@ set swapfile
 set directory=~/.vim_backups
 " set backup extension (create versioned backups)
 au BufWritePre * let &bex = '~' . strftime("%Y%m%d-%H%M%S")
-
-" enable filtype plugins / indention
-filetype plugin on
-filetype indent on
-syntax enable
 
 " extended matching on % key (xml, html, ...)
 runtime macros/matchit.vim
