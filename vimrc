@@ -112,6 +112,8 @@ endif
 " change leader key from '\' to ','
 let mapleader = ","
 
+" toggle mini buffer explorer
+map <silent> <F1> :MBEToggle<CR>
 " disable highlighted search results
 map <silent> <Leader>/ :nohlsearch<CR>
 map <silent> <Leader>? :nohlsearch<CR>
