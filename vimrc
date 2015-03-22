@@ -21,6 +21,13 @@ set history=500     " keep a longer history
 set nowrap          " do not wrap lines
 
 set number          " show line numbers
+set relativenumber  " show relative line numbers
+" disable relative line numbers when vim has no focus
+au FocusLost   * :set norelativenumber
+au FocusGained * :set relativenumber
+" disable relative line numbers in insert mode
+au InsertEnter * :set norelativenumber
+au InsertLeave * :set relativenumber
 set numberwidth=4
 
 " searching
@@ -113,18 +120,18 @@ endif
 let mapleader = ","
 
 " toggle mini buffer explorer
-map <silent> <F1> :MBEToggle<CR>
+nmap <silent> <F1> :MBEToggle<CR>
 " disable highlighted search results
-map <silent> <Leader>/ :nohlsearch<CR>
-map <silent> <Leader>? :nohlsearch<CR>
+nmap <silent> <Leader><Leader>/ :nohlsearch<CR>
+nmap <silent> <Leader><Leader>? :nohlsearch<CR>
 " toggle line wrap
-map <silent> <Leader><C-w> :setlocal wrap!<CR>
+nmap <silent> <Leader><Leader>w :setlocal wrap!<CR>
 " toggle line numbering
-map <silent> <Leader><C-n> :setlocal number!<CR>
+nmap <silent> <Leader><Leader>n :setlocal relativenumber!<CR>
 " reindent whole file
-map <silent> <Leader><C-i>  :call MyPreserveState("normal gg=G")<CR>
+nmap <silent> <Leader><Leader><TAB>   :call MyPreserveState("normal gg=G")<CR>
 " remove trailing whitespaces
-map <silent> <Leader><C-SPACE>  :call MyPreserveState("%s/\\s\\+$//ge")<CR>
+nmap <silent> <Leader><Leader><SPACE> :call MyPreserveState("%s/\\s\\+$//ge")<CR>
 
 " fast switching between buffers
 nmap <silent> <C-TAB>   :bNext<CR>
