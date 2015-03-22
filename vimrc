@@ -16,6 +16,7 @@ filetype indent on
 
 set hidden          " handle buffers effecively
 set ruler           " show lines and columns in status line
+set laststatus=2    " allways show statusline
 set showcmd         " show (partial) comman in last line
 set history=500     " keep a longer history
 set nowrap          " do not wrap lines
