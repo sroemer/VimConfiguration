@@ -8,12 +8,6 @@
 set nocompatible            " do not make vim compatible with vi
 " use pathogen for installation of plugins and runtime files
 execute pathogen#infect()
-" syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
 
 " enable syntax highlighting and filtype plugins / indention
 syntax on
