@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 let rc=0
 if [ -e ~/.vimrc ]; then
     echo "error: ~/.vimrc already exists"
