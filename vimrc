@@ -88,15 +88,8 @@ runtime macros/matchit.vim
 " ######################################################################################################################
 " colorscheme and gui settings
 " ######################################################################################################################
-" colorscheme molokai if available, otherwise colorscheme desert
-try
-    colorscheme molokai
-catch
-    try
-        colorscheme desert
-    catch
-    endtry
-endtry
+" colorscheme molokai
+colorscheme molokai
 
 " set lines, columns, guioptions and font
 if has("gui_running")
