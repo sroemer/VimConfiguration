@@ -123,16 +123,16 @@ let mapleader = ","
 " toggle mini buffer explorer
 nmap <silent> <F1> :MBEToggle<CR>
 " disable highlighted search results
-nmap <silent> <Leader><Leader>/ :nohlsearch<CR>
-nmap <silent> <Leader><Leader>? :nohlsearch<CR>
+nmap <silent> <Leader>/ :nohlsearch<CR>
+nmap <silent> <Leader>? :nohlsearch<CR>
 " toggle line wrap
-nmap <silent> <Leader><Leader>w :setlocal wrap!<CR>
+nmap <silent> <Leader>w :setlocal wrap!<CR>
 " toggle line numbering
-nmap <silent> <Leader><Leader>n :setlocal relativenumber!<CR>
+nmap <silent> <Leader>n :setlocal relativenumber!<CR>
 " reindent whole file
-nmap <silent> <Leader><Leader><TAB>   :call MyPreserveState("normal gg=G")<CR>
+nmap <silent> <Leader><TAB>   :call MyPreserveState("normal gg=G")<CR>
 " remove trailing whitespaces
-nmap <silent> <Leader><Leader><SPACE> :call MyPreserveState("%s/\\s\\+$//ge")<CR>
+nmap <silent> <Leader><SPACE> :call MyPreserveState("%s/\\s\\+$//ge")<CR>
 
 " fast switching between buffers
 nmap <silent> <C-TAB>   :bNext<CR>
