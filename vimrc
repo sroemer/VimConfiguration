@@ -8,6 +8,8 @@
 set nocompatible            " do not make vim compatible with vi
 " use pathogen for installation of plugins and runtime files
 execute pathogen#infect()
+" enable tab line (part of airline plugin)
+let g:airline#extensions#tabline#enabled = 1
 
 " enable syntax highlighting and filtype plugins / indention
 syntax on
