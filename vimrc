@@ -22,6 +22,7 @@ set laststatus=2    " allways show statusline
 set showcmd         " show (partial) comman in last line
 set history=500     " keep a longer history
 set nowrap          " do not wrap lines
+set confirm         " show dialog when an operation has to be confirmed
 
 set number          " show line numbers
 set relativenumber  " show relative line numbers
@@ -127,7 +128,9 @@ nmap <silent> <Leader><TAB>   :call MyPreserveState("normal gg=G")<CR>
 " remove trailing whitespaces
 nmap <silent> <Leader><SPACE> :call MyPreserveState("%s/\\s\\+$//ge")<CR>
 
-" fast switching between buffers
+" open new buffer, delete buffer and fast switching between buffers
+nmap <silent> <C-INS>   :enew<CR>
+nmap <silent> <C-DEL>   :confirm bd<CR>
 nmap <silent> <C-TAB>   :bNext<CR>
 nmap <silent> <C-S-TAB> :bprevious<CR>
 " make Y consistent with C and D
