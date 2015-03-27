@@ -10,6 +10,17 @@ set nocompatible            " do not make vim compatible with vi
 execute pathogen#infect()
 " enable tab line (part of airline plugin)
 let g:airline#extensions#tabline#enabled = 1
+" neosnippet key-mappings.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+            \ "\<Plug>(neosnippet_expand_or_jump)"
+            \: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+            \ "\<Plug>(neosnippet_expand_or_jump)"
+            \: "\<TAB>"
+" For snippet_complete marker.
+if has('conceal')
+    set conceallevel=2 concealcursor=i
+endif
 
 " enable syntax highlighting and filtype plugins / indention
 syntax on
