@@ -9,6 +9,7 @@ My vimrc file and some additional stuff
 
 #### Plugins
 * Airline 0.7 - www.github.com/bling/vim-airline
+* CSV 0.31 - www.github.com/chrisbra/csv.vim
 * CtrlP 1.7.9 - www.github.com/kien/ctrlp.vim
 * Easymotion 2.1.0 - www.github.com/Lokaltog/vim-easymotion
 * Fugitive 2.2 - www.github.com/tpope/vim-fugitive
