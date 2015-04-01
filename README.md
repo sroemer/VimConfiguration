@@ -14,4 +14,5 @@ My vimrc file and some additional stuff
 * Fugitive 2.2 - www.github.com/tpope/vim-fugitive
 * Neosnippet 4.0 - www.github.com/Shougo/neosnippet.vim
 * Syntastic 3.6.0 - www.github.com/scrooloose/syntastic
+* Tagbar 2.6.1 - www.github.com/majutsushi/tagbar
 * Visual Marks 0.4 - www.vim.org/scripts/script.php?script_id=1026
