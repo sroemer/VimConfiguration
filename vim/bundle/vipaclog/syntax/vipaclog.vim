@@ -6,8 +6,8 @@ hi VipacLogFatal     guibg=Red guifg=fg
 hi VipacLogError     guibg=bg  guifg=Red
 hi VipacLogWarning   guibg=bg  guifg=DarkYellow
 hi VipacLogConfig    guibg=bg  guifg=Green
-hi VipacLogEvent     guibg=bg  guifg=fg
-hi VipacLogInfo      guibg=bg  guifg=Gray
+hi VipacLogEvent     guibg=bg  guifg=LightBlue
+hi VipacLogInfo      guibg=bg  guifg=fg
 hi VipacLogDebug     guibg=bg  guifg=Gray
 hi VipacLogFineDebug guibg=bg  guifg=DarkGray
 hi VipacLogProfile   guibg=bg  guifg=DarkGray
